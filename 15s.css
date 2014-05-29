@@ -1,0 +1,144 @@
+
+
+body {
+	margin: 0;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.click-area {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	color: #FFF;
+}
+
+#numberBox {
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	overflow: hidden;
+	background-color: #FFF;
+}
+
+.mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.9);
+	z-index: 999;
+	/*display: none;*/
+}
+
+.clock {
+	position: absolute;
+	z-index: 20;
+	width: 100%;
+	height: 10px;
+	background-color: #ccc;
+	top: 30%;
+}
+.clock .bar {
+	display: block;
+	width: 100%;
+	height: 10px;
+	background-color: green;
+	-webkit-transition:all .2s;
+}
+
+
+
+.menu {
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	padding: 10% 0 0 0;
+	color: #FFF;
+	text-align: center;
+}
+.menu .title {
+	font-size: 60px;
+	padding: 0;
+	margin: 0 0 10% 0;
+}
+
+
+.scores-box {
+	height: 35px;
+	margin-bottom: 10%;
+	display: none;
+}
+.scores-current,
+.scores-title {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5%;
+}
+.scores-current:before,
+.scores-title:before {
+	color: #FFF;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.scores-current:before {
+	content: "Score : ";
+}
+.scores-title:before {
+	content: "Title : ";
+}
+
+
+.action-box {
+	margin-bottom: 10%;
+}
+
+.restart-btn {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 20px 30px;
+	background-color: #8f7a66;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+
+
+
+.ready-timer {
+	position: absolute;
+	z-index: 1001;
+	width: 100%;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	margin-top: -50px;
+	top: 50%;
+	color: #FFF;
+	font-size: 100px;
+	display: none;
+}
+
+
+.desc-box {
+	padding: 0 15%;
+	text-align: left;
+	margin-bottom: 10%;
+}
+
+
+
+
+

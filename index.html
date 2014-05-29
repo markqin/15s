@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>决战15秒</title>
+	<link rel="stylesheet" href="15s.css">
+</head>
+<body>
+	
+	<div id="numberBox">0</div>
+	<div id="clock" class="clock"><span class="bar"></span></div>
+	<div id="clickArea" class="click-area"></div>
+	<div id="mask" class="mask"></div>
+	<div id="menu" class="menu">
+
+		<h1 class="title">决战15秒</h1>
+		<div class="action-box">
+			<a href="javascript:;" id="restartBtn" class="restart-btn">New Game</a>
+		</div>
+		<div id="descBox" class="desc-box">
+			玩法： 点击屏幕下方黑色区域，每点击一次得一分。在15秒内，看谁的分数高。
+		</div>
+		<div id="scoresBox" class="scores-box">
+			<div id="scoresCurrent" class="scores-current"></div>
+			<div id="scoresTitle" class="scores-title"></div>
+		</div>
+		
+	</div>
+	<div id="readyTimer" class="ready-timer"></div>
+	
+	<script src="15s.js"></script>
+</body>
+</html>
